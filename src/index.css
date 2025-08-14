@@ -42,7 +42,7 @@ body{
   font-weight: 700;
   font-size: 12px;
 }
-.nav-link.is-active{ color: var(--pink); }  /* 활성: 핑크, 배경 없음 */
+.nav-link.is-active{ color: var(--pink); } 
 
 /* ===== HERO ===== */
 .hero{
