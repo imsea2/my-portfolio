@@ -35,23 +35,31 @@ body {
 .frame {
     max-width: var(--frame-max);
     margin: 0 auto;
-    padding: 0 var(--frame-pad);
 }
 
 /* ===== NAV (배경 없이 텍스트만) ===== */
 .nav {
     position: sticky;
-    top: 20px;
-    bottom: 20px;
-    z-index: 50;
-    background: transparent;
+    top: 0;
+    left: 0;
+    /* 추가 */
+    right: 0;
+    /* 추가 */
+    width: 100%;
+    /* 추가 */
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: saturate(180%) blur(20px);
 }
+
+
 
 .nav-inner {
     height: 56px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 var(--frame-pad);
 }
 
 .menu {
